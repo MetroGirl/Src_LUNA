@@ -1,8 +1,8 @@
 # source code give away.
-a bunch of source codes and assets of "MG001-LUNA".
-prod page: https://github.com/MetroGirl/LUNA
-pouet: http://www.pouet.net/prod.php?which=65132
-youtube: https://www.youtube.com/watch?v=Zv7ehetADeg
+a bunch of source codes and assets of "MG001-LUNA".  
+prod page: https://github.com/MetroGirl/LUNA  
+pouet: http://www.pouet.net/prod.php?which=65132  
+youtube: https://www.youtube.com/watch?v=Zv7ehetADeg  
 
 
                           MetroGirl @ Tokyo Demo Fest 2015
