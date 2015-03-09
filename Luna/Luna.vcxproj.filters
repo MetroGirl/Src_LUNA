@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{93a39c82-023a-476e-917a-4b152140f2a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{0482981b-634e-45f6-beeb-cfc9174a97b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{10f62339-fc66-43f0-b87b-d5341e6e09ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gfx">
+      <UniqueIdentifier>{2c5249c9-13b9-42ca-a74a-64062560d822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\sound">
+      <UniqueIdentifier>{8376c596-e23c-4ce1-9f1e-2a2b6b863f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\resource">
+      <UniqueIdentifier>{eec0dd22-2ff8-4a7c-a97e-064ba8c35a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\renderPass">
+      <UniqueIdentifier>{67aeb182-35d7-4774-a4e8-1883455fc3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{d4754296-3caa-47c3-a375-1addcd1efa54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\postEffect">
+      <UniqueIdentifier>{89e692e0-6e0a-43f2-b45f-6a999f00c09e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{77fe92ef-0104-4200-b715-ccd05e087a06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\assert.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\autoInit.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\builtinTypes.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\cal.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\cast.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\codingStyle.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\debug.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\entryPoint.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\external.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\file.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\instance.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\intrinsic.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\object.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\pal.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\porting.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\singleton.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\standard.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\type.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="app\demo.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\window.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="resource.h">
+      <Filter>リソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sync.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gfx\deviceDX11.h">
+      <Filter>lib\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sceneManager.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\scene.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\task.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\stopwatch.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="app\sampleTask.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\bal.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\resourceObject.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\resourceManager.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\stream.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="app\sampleResource.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\renderer.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\settingsManager.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\soundManager.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sound\CSoundLoader.h">
+      <Filter>lib\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sound\CSound.h">
+      <Filter>lib\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sound\OggVorbisLoader.h">
+      <Filter>lib\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\sound\WaveLoader.h">
+      <Filter>lib\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="app\shaderResource.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\resource\resourceLua.h">
+      <Filter>lib\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\scriptContext.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\scriptManager.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gfx\utilityDX11.h">
+      <Filter>lib\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="app\renderPass\draw2dPass.h">
+      <Filter>app\renderPass</Filter>
+    </ClInclude>
+    <ClInclude Include="app\renderPass.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\renderPass\context.h">
+      <Filter>app\renderPass</Filter>
+    </ClInclude>
+    <ClInclude Include="app\cameraTask.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\camera.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\renderPass\particlePass.h">
+      <Filter>app\renderPass</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gfx\frameBuffer.h">
+      <Filter>lib\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gfx\samplerState.h">
+      <Filter>lib\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="app\textureResource.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\particleEmitterTask.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\stringHelper.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\renderPass\fluidPass.h">
+      <Filter>app\renderPass</Filter>
+    </ClInclude>
+    <ClInclude Include="app\renderPass\postEffectPass.h">
+      <Filter>app\renderPass</Filter>
+    </ClInclude>
+    <ClInclude Include="app\postEffect\postEffectTask.h">
+      <Filter>app\postEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="app\postEffect\radialBlurTask.h">
+      <Filter>app\postEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="app\fluidGridTask.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gfx\blendState.h">
+      <Filter>lib\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="app\postEffect\genericPostEffectTask.h">
+      <Filter>app\postEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="app\floorTask.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\moonTask.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\postEffect\screenCaptureTask.h">
+      <Filter>app\postEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\color.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\builtinTypes.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\debug.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\entryPoint.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\file.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\instance.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\main.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\object.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\type.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="app\demo.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\window.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="lib\sync.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gfx\deviceDX11.cpp">
+      <Filter>lib\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sceneManager.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\scene.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\task.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\stopwatch.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="app\sampleTask.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\resourceObject.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\resourceManager.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\stream.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="app\sampleResource.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\renderer.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\settingsManager.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\soundManager.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sound\CSoundLoader.cpp">
+      <Filter>lib\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sound\CSound.cpp">
+      <Filter>lib\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sound\WaveLoader.cpp">
+      <Filter>lib\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\sound\OggVorbisLoader.cpp">
+      <Filter>lib\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="app\shaderResource.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\resource\resourceLua.cpp">
+      <Filter>lib\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\scriptContext.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\scriptManager.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="app\renderPass\draw2dPass.cpp">
+      <Filter>app\renderPass</Filter>
+    </ClCompile>
+    <ClCompile Include="app\renderPass.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\cameraTask.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\renderPass\particlePass.cpp">
+      <Filter>app\renderPass</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gfx\frameBuffer.cpp">
+      <Filter>lib\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gfx\samplerState.cpp">
+      <Filter>lib\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="app\textureResource.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\particleEmitterTask.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\renderPass\fluidPass.cpp">
+      <Filter>app\renderPass</Filter>
+    </ClCompile>
+    <ClCompile Include="app\renderPass\postEffectPass.cpp">
+      <Filter>app\renderPass</Filter>
+    </ClCompile>
+    <ClCompile Include="app\postEffect\postEffectTask.cpp">
+      <Filter>app\postEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="app\postEffect\radialBlurTask.cpp">
+      <Filter>app\postEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="app\fluidGridTask.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gfx\blendState.cpp">
+      <Filter>lib\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="app\postEffect\genericPostEffectTask.cpp">
+      <Filter>app\postEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="app\floorTask.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\moonTask.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\postEffect\screenCaptureTask.cpp">
+      <Filter>app\postEffect</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="settingDialog.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="dialog.bmp">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="icon.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\develop.lua">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\fluid.lua">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\posteffect.lua">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\sampleTask.lua">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\develop.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\fluid3d.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\fullScreenTriangle.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\particle.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\posteffect.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\sampleTask.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\common.hlsli">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\particle.hlsli">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\particlesort.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\script\emittercontroller.lua">
+      <Filter>script</Filter>
+    </None>
+    <None Include="data\script\fluidcontroller.lua">
+      <Filter>script</Filter>
+    </None>
+    <None Include="data\shader\environment.lua">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\environment.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\particleShadow.hlsl" />
+    <None Include="data\shader\moon.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\shader\emitter_box.hlsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="data\script\mooncontroller.lua">
+      <Filter>script</Filter>
+    </None>
+    <None Include="data\shader\emitter_moon.hlsl" />
+  </ItemGroup>
+</Project>

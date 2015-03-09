@@ -1,0 +1,132 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 172, 189
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   ".d e m o.",IDC_RUN,67,170,51,17,BS_FLAT
+    PUSHBUTTON      ".d i e.",IDC_CLOSE,121,170,46,17,BS_FLAT
+    GROUPBOX        ".d i s p l a y  o p t i o n.",IDC_STATIC,67,108,100,60
+    CONTROL         "  .f u l l s c r e e n.",IDC_CHECK_FULLSCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,118,91,8
+    CONTROL         "  .v  s y n c.",IDC_CHECK_VSYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,128,91,8
+    GROUPBOX        ".a s p e c t . r a t i o.",IDC_STATIC,67,54,95,54,BS_FLAT
+    LISTBOX         IDC_RESOLUTION,71,13,91,37,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_RIGHT | WS_EX_STATICEDGE
+    LISTBOX         IDC_ASPECT,71,64,91,40,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         IDB_BITMAP1,IDC_STATIC,"Static",SS_BITMAP,3,3,61,166
+    CONTROL         "  .b i g  s c r e e n.",IDC_CHECK_BIGSCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,138,91,8
+    PUSHBUTTON      ".world wide web.",IDC_WWW,3,170,61,17,BS_FLAT
+    CONTROL         "  .a l w a y s  o n  t o p.",IDC_CHECK_AOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,148,91,8
+    GROUPBOX        ". r e s o l u t i o  n .",IDC_STATIC,67,3,100,51,BS_FLAT
+    CONTROL         "  .h i g h  q u a l i t y.",IDC_CHECK_AOT2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,160,91,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 167
+        VERTGUIDE, 67
+        VERTGUIDE, 71
+        VERTGUIDE, 162
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 13
+        HORZGUIDE, 50
+        HORZGUIDE, 54
+        HORZGUIDE, 64
+        HORZGUIDE, 104
+        HORZGUIDE, 158
+        HORZGUIDE, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "dialog.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon.ico"
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

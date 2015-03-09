@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Publish|Win32">
+      <Configuration>Publish</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9E7873B2-1D51-4505-A24D-D327B0EED9DD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Luna</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Publish|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Publish|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Publish|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_NON_CONFORMING_SWPRINTFS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)external\OggVorbis\Include;$(ProjectDir)external\lua\src;$(ProjectDir)external\BASS;$(ProjectDir)external\DirectXTex</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\OggVorbis\Lib;$(ProjectDir)external\lua\lib;$(ProjectDir)external\BASS;$(ProjectDir)external\DirectXTex</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q $(ProjectDir)external\DirectXTex\DirectXTex\Bin\Desktop_2013\Win32\Debug\DirectXTex.lib $(ProjectDir)external\DirectXTex\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_NON_CONFORMING_SWPRINTFS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)external\OggVorbis\Include;$(ProjectDir)external\lua\src;$(ProjectDir)external\BASS;$(ProjectDir)external\DirectXTex</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\OggVorbis\Lib;$(ProjectDir)external\lua\lib;$(ProjectDir)external\BASS;$(ProjectDir)external\DirectXTex</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q $(ProjectDir)external\DirectXTex\DirectXTex\Bin\Desktop_2013\Win32\Release\DirectXTex.lib $(ProjectDir)external\DirectXTex\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Publish|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>PUBLISH;_CRT_NON_CONFORMING_SWPRINTFS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)external\OggVorbis\Include;$(ProjectDir)external\lua\src;$(ProjectDir)external\BASS;$(ProjectDir)external\DirectXTex</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)external\OggVorbis\Lib;$(ProjectDir)external\lua\lib;$(ProjectDir)external\BASS;$(ProjectDir)external\DirectXTex</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /Q $(ProjectDir)external\DirectXTex\DirectXTex\Bin\Desktop_2013\Win32\Release\DirectXTex.lib $(ProjectDir)external\DirectXTex\</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>copy /y $(TargetPath) $(SolutionDir)prod\$(TargetName)$(TargetExt)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="app\camera.h" />
+    <ClInclude Include="app\cameraTask.h" />
+    <ClInclude Include="app\demo.h" />
+    <ClInclude Include="app\floorTask.h" />
+    <ClInclude Include="app\fluidGridTask.h" />
+    <ClInclude Include="app\moonTask.h" />
+    <ClInclude Include="app\particleEmitterTask.h" />
+    <ClInclude Include="app\postEffect\genericPostEffectTask.h" />
+    <ClInclude Include="app\postEffect\postEffectTask.h" />
+    <ClInclude Include="app\postEffect\radialBlurTask.h" />
+    <ClInclude Include="app\postEffect\screenCaptureTask.h" />
+    <ClInclude Include="app\renderer.h" />
+    <ClInclude Include="app\renderPass.h" />
+    <ClInclude Include="app\renderPass\context.h" />
+    <ClInclude Include="app\renderPass\draw2dPass.h" />
+    <ClInclude Include="app\renderPass\fluidPass.h" />
+    <ClInclude Include="app\renderPass\particlePass.h" />
+    <ClInclude Include="app\renderPass\postEffectPass.h" />
+    <ClInclude Include="app\sampleResource.h" />
+    <ClInclude Include="app\sampleTask.h" />
+    <ClInclude Include="app\shaderResource.h" />
+    <ClInclude Include="app\textureResource.h" />
+    <ClInclude Include="app\stringHelper.h" />
+    <ClInclude Include="lib\assert.h" />
+    <ClInclude Include="lib\autoInit.h" />
+    <ClInclude Include="lib\bal.h" />
+    <ClInclude Include="lib\builtinTypes.h" />
+    <ClInclude Include="lib\cal.h" />
+    <ClInclude Include="lib\cast.h" />
+    <ClInclude Include="lib\codingStyle.h" />
+    <ClInclude Include="lib\color.h" />
+    <ClInclude Include="lib\debug.h" />
+    <ClInclude Include="lib\entryPoint.h" />
+    <ClInclude Include="lib\external.h" />
+    <ClInclude Include="lib\file.h" />
+    <ClInclude Include="lib\gfx\blendState.h" />
+    <ClInclude Include="lib\gfx\deviceDX11.h" />
+    <ClInclude Include="lib\gfx\frameBuffer.h" />
+    <ClInclude Include="lib\gfx\samplerState.h" />
+    <ClInclude Include="lib\gfx\utilityDX11.h" />
+    <ClInclude Include="lib\instance.h" />
+    <ClInclude Include="lib\intrinsic.h" />
+    <ClInclude Include="lib\object.h" />
+    <ClInclude Include="lib\pal.h" />
+    <ClInclude Include="lib\porting.h" />
+    <ClInclude Include="lib\resourceManager.h" />
+    <ClInclude Include="lib\resourceObject.h" />
+    <ClInclude Include="lib\resource\resourceLua.h" />
+    <ClInclude Include="lib\scene.h" />
+    <ClInclude Include="lib\sceneManager.h" />
+    <ClInclude Include="lib\scriptContext.h" />
+    <ClInclude Include="lib\scriptManager.h" />
+    <ClInclude Include="lib\settingsManager.h" />
+    <ClInclude Include="lib\singleton.h" />
+    <ClInclude Include="lib\soundManager.h" />
+    <ClInclude Include="lib\sound\CSound.h" />
+    <ClInclude Include="lib\sound\CSoundLoader.h" />
+    <ClInclude Include="lib\sound\OggVorbisLoader.h" />
+    <ClInclude Include="lib\sound\WaveLoader.h" />
+    <ClInclude Include="lib\standard.h" />
+    <ClInclude Include="lib\stopwatch.h" />
+    <ClInclude Include="lib\stream.h" />
+    <ClInclude Include="lib\sync.h" />
+    <ClInclude Include="lib\task.h" />
+    <ClInclude Include="lib\type.h" />
+    <ClInclude Include="lib\window.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\cameraTask.cpp" />
+    <ClCompile Include="app\demo.cpp" />
+    <ClCompile Include="app\floorTask.cpp" />
+    <ClCompile Include="app\fluidGridTask.cpp" />
+    <ClCompile Include="app\moonTask.cpp" />
+    <ClCompile Include="app\particleEmitterTask.cpp" />
+    <ClCompile Include="app\postEffect\genericPostEffectTask.cpp" />
+    <ClCompile Include="app\postEffect\postEffectTask.cpp" />
+    <ClCompile Include="app\postEffect\radialBlurTask.cpp" />
+    <ClCompile Include="app\postEffect\screenCaptureTask.cpp" />
+    <ClCompile Include="app\renderer.cpp" />
+    <ClCompile Include="app\renderPass.cpp" />
+    <ClCompile Include="app\renderPass\draw2dPass.cpp" />
+    <ClCompile Include="app\renderPass\fluidPass.cpp" />
+    <ClCompile Include="app\renderPass\particlePass.cpp" />
+    <ClCompile Include="app\renderPass\postEffectPass.cpp" />
+    <ClCompile Include="app\sampleResource.cpp" />
+    <ClCompile Include="app\sampleTask.cpp" />
+    <ClCompile Include="app\shaderResource.cpp" />
+    <ClCompile Include="app\textureResource.cpp" />
+    <ClCompile Include="lib\builtinTypes.cpp" />
+    <ClCompile Include="lib\debug.cpp" />
+    <ClCompile Include="lib\entryPoint.cpp" />
+    <ClCompile Include="lib\file.cpp" />
+    <ClCompile Include="lib\gfx\blendState.cpp" />
+    <ClCompile Include="lib\gfx\deviceDX11.cpp" />
+    <ClCompile Include="lib\gfx\frameBuffer.cpp" />
+    <ClCompile Include="lib\gfx\samplerState.cpp" />
+    <ClCompile Include="lib\instance.cpp" />
+    <ClCompile Include="lib\main.cpp" />
+    <ClCompile Include="lib\object.cpp" />
+    <ClCompile Include="lib\resourceManager.cpp" />
+    <ClCompile Include="lib\resourceObject.cpp" />
+    <ClCompile Include="lib\resource\resourceLua.cpp" />
+    <ClCompile Include="lib\scene.cpp" />
+    <ClCompile Include="lib\sceneManager.cpp" />
+    <ClCompile Include="lib\scriptContext.cpp" />
+    <ClCompile Include="lib\scriptManager.cpp" />
+    <ClCompile Include="lib\settingsManager.cpp" />
+    <ClCompile Include="lib\soundManager.cpp" />
+    <ClCompile Include="lib\sound\CSound.cpp" />
+    <ClCompile Include="lib\sound\CSoundLoader.cpp" />
+    <ClCompile Include="lib\sound\OggVorbisLoader.cpp" />
+    <ClCompile Include="lib\sound\WaveLoader.cpp" />
+    <ClCompile Include="lib\stopwatch.cpp" />
+    <ClCompile Include="lib\stream.cpp" />
+    <ClCompile Include="lib\sync.cpp" />
+    <ClCompile Include="lib\task.cpp" />
+    <ClCompile Include="lib\type.cpp" />
+    <ClCompile Include="lib\window.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Publish|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="settingDialog.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="dialog.bmp" />
+    <Image Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\script\emittercontroller.lua" />
+    <None Include="data\script\fluidcontroller.lua" />
+    <None Include="data\script\mooncontroller.lua" />
+    <None Include="data\shader\common.hlsli" />
+    <None Include="data\shader\develop.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Publish|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+    </None>
+    <None Include="data\shader\environment.lua" />
+    <None Include="data\shader\fluid3d.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="data\shader\fullScreenTriangle.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="data\shader\particle.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="data\shader\particle.hlsli" />
+    <None Include="data\shader\posteffect.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="data\shader\sampleTask.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\develop.lua" />
+    <None Include="data\shader\fluid.lua" />
+    <None Include="data\shader\posteffect.lua" />
+    <None Include="data\shader\sampleTask.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\particlesort.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\environment.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\particleShadow.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\moon.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\emitter_box.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shader\emitter_moon.hlsl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
