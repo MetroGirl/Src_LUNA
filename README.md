@@ -1,4 +1,4 @@
-# Src_LUNA
+# source code give away.
 a bunch of source codes and assets of "MG001-LUNA".
 
                           MetroGirl @ Tokyo Demo Fest 2015
